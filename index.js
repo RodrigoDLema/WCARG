@@ -1,12 +1,41 @@
 const pally = require('pa11y')
 
+const options = {
+        log: {
+                debug: console.log,
+                error: console.error,
+                info: console.log
+        }
+};
+
+function esAccesible(results,seleccionados) {
+        console.log("Cantidad repetidas  " + seleccionados)
+
+        let resultado = seleccionados.filter((item,index)=>{
+        return seleccionados.indexOf(item) === index;
+        })
+
+        console.log("Los códigos con error son  " + resultado)
+
+        if (resultado.length > 8){
+                console.log(results.pageUrl + " NO ES ACCESIBLE")
+        }
+        else {
+                console.log(results.pageUrl + " ES ACCESIBLE")
+        }      
+}
+
 async function run() {
-        const results = await pally ('https://www.eventbrite.com/');
+        const results = await pally ('https://www.eventbrite.com/',options);
+
+        //const results = await pally ('http://localhost:3000/Build-MovieSearch-Engine/');
+        
 
         //const results = pa11y('https://www.eventbrite.com/', {standard: 'WCAG2A'});
         //console.log(results.pageUrl)
 
 let seleccionados = [];
+
 
 let wcag = [ 
 "WCAG2A.Principle1.Guideline1_1.1_1_1",
@@ -132,24 +161,8 @@ results.issues.forEach(element => {
         } 
 });
 
-console.log("Cantidad repetidas  " + seleccionados)
-
-let resultado = seleccionados.filter((item,index)=>{
-  return seleccionados.indexOf(item) === index;
-})
-
-console.log("Los códigos con error son  " + resultado)
-
-if (resultado.length > 8){
-        console.log(results.pageUrl + " NO ES ACCESIBLE")
-}
-else {
-        console.log(results.pageUrl + " ES ACCESIBLE")
-}
+esAccesible(results,seleccionados);
 
 }
-
-
-
 
 run();
