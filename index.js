@@ -88,7 +88,7 @@ resultsA.issues.forEach(element => {
         for (i = 0; i < wcag.length; i++) {
                 if (element.code.substring(0,37).includes(wcag[i])) {    
                         // si lo incluye agregalo al array de los seleccionados
-                        seleccionados.push(wcag[i],element.type);
+                        seleccionados.push(wcag[i]);
                 }            
         } 
 });
