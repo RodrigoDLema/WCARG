@@ -6,6 +6,8 @@ const pa11y = require('pa11y');
 function runPally() {
     pa11y('https://www.eventbrite.com/', {
         standard: 'WCAG2A',
+        includeNotices: true,
+        includeWarnings: true,
         log: {
             debug: console.log,
             error: console.error,
