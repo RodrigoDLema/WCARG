@@ -2,13 +2,17 @@
 
 
 function esAccesible(results,seleccionados) {
-    console.log("Cantidad repetidas  " + seleccionados)
+    //console.log("Cantidad repetidas  " + seleccionados)
 
     let resultado = seleccionados.filter((item,index)=>{
     return seleccionados.indexOf(item) === index;
     })
 
-    console.log("Los códigos con error son  " + resultado)
+    console.log("Los códigos con error son:  ")
+
+    for (i = 0; i < resultado.length; i++) {
+        console.log(resultado[i])
+    } 
 
     if (resultado.length > 8){
             console.log(results.pageUrl + " NO ES ACCESIBLE")

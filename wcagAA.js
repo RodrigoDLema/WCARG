@@ -15,9 +15,9 @@ async function runPallyAA() {
         wait: 3000
     })
     .then((results) => {
-        //console.log(results);
+        console.log(results);
         return results;
-        console.log(json.results.pageUrl);
+        
     })
 }
 
