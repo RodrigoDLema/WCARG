@@ -29,7 +29,7 @@ const optionsA = {
 };
 
 async function run() {
-        const resultsAA = await pally ('https://www.eventbrite.com/',optionsAA);
+        const resultsAA = await pally (URL,optionsAA);
 
 let seleccionados = [];
 
@@ -84,7 +84,7 @@ resultsAA.issues.forEach(element => {
         } 
 });
 
-const resultsA = await pally ('https://www.eventbrite.com/',optionsA);
+const resultsA = await pally (URL,optionsA);
 
 resultsA.issues.forEach(element => {
 
