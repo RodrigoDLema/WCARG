@@ -3,6 +3,9 @@ const functionEsAccesible = require("./functions.js")
 
 let URL = process.argv[2];
 
+console.log(URL)
+
+console.log(URL[0])
 
 const optionsAA = {
         standard: 'WCAG2AA',
