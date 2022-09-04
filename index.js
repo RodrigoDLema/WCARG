@@ -1,7 +1,7 @@
 const pally = require('pa11y')
 const functionEsAccesible = require("./functions.js")
 
-var URL = process.argv[2];
+let URL = process.argv[2];
 
 
 const optionsAA = {
@@ -29,7 +29,7 @@ const optionsA = {
 };
 
 async function run() {
-        const resultsAA = await pally (URL,optionsAA);
+        const resultsAA = await pally (URL[0],optionsAA);
 
 let seleccionados = [];
 
@@ -84,7 +84,7 @@ resultsAA.issues.forEach(element => {
         } 
 });
 
-const resultsA = await pally (URL,optionsA);
+const resultsA = await pally (URL[0],optionsA);
 
 resultsA.issues.forEach(element => {
 
