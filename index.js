@@ -98,6 +98,8 @@ functionEsAccesible.esAccesible(resultsAA,seleccionados);
 
 console.log(hola);
 
+console.log("Ahora si");        
+
 }
 
 
