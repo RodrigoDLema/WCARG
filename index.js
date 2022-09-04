@@ -1,8 +1,8 @@
 const pally = require('pa11y')
 const functionEsAccesible = require("./functions.js")
-var hola = process.argv[1];
-var como = process.argv[2];
-var andas = process.argv[0];
+
+var URL = process.argv[2];
+
 
 const optionsAA = {
         standard: 'WCAG2AA',
@@ -98,10 +98,8 @@ resultsA.issues.forEach(element => {
 
 functionEsAccesible.esAccesible(resultsAA,seleccionados);
 
-console.log(hola);
-console.log(como);
-console.log(andas);
-console.log("Ahora si");        
+console.log(URL);
+      
 
 }
 
