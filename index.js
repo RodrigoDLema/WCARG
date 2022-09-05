@@ -1,9 +1,9 @@
 const pally = require('pa11y')
 const functionEsAccesible = require("./functions.js")
 
-let URL_PRE = process.argv[2];
+var URL_PRE = process.argv[2];
 
-var URL = URL_PRE.split(",");
+let URL = URL_PRE.split(",");
 
 console.log(URL_PRE)
 
