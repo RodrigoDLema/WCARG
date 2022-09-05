@@ -3,7 +3,7 @@ const functionEsAccesible = require("./functions.js")
 
 var URL_PRE = process.argv[2];
 
-var str = "https://www.eventbrite.com/,https://www.ole.com.ar/";
+let str = "https://www.eventbrite.com/,https://www.ole.com.ar/";
 
 let URL = str.split(",");
 
