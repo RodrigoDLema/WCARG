@@ -33,7 +33,7 @@ const optionsA = {
 };
 
 async function run() {
-        const resultsAA = await pally (URL[0],optionsAA);
+        const resultsAA = await pally (myArray[0],optionsAA);
 
 let seleccionados = [];
 
@@ -88,7 +88,7 @@ resultsAA.issues.forEach(element => {
         } 
 });
 
-const resultsA = await pally (URL[0],optionsA);
+const resultsA = await pally (myArray[0],optionsA);
 
 resultsA.issues.forEach(element => {
 
