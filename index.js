@@ -1,7 +1,7 @@
 const pally = require('pa11y')
 const functionEsAccesible = require("./functions.js")
 
-var URL_PRE = process.argv[2];
+let URL_PRE = process.argv[2];
 
 //let text = "www.eventbrite.com/ ,www.ole.com.ar/";
 const myArray = URL_PRE.split(",");
