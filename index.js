@@ -5,8 +5,8 @@ var URL_PRE = process.argv[2];
 
 let URL = URL_PRE.split(",");
 
-console.log(URL_PRE);
-console.log(URL[0]);
+console.log("esta es la url" + URL_PRE);
+console.log("esta es la evenbrite" + URL[0]);
 
 const optionsAA = {
         standard: 'WCAG2AA',
