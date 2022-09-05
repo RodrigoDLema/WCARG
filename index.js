@@ -3,10 +3,11 @@ const functionEsAccesible = require("./functions.js")
 
 var URL_PRE = process.argv[2];
 
-let URL = URL_PRE.split(",");
+var str = "https://www.eventbrite.com/,https://www.ole.com.ar/";
 
-console.log("esta es la url" + URL_PRE);
-console.log("esta es la evenbrite" + URL[0]);
+let URL = str.split(",");
+
+
 
 const optionsAA = {
         standard: 'WCAG2AA',
