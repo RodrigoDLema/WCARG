@@ -5,8 +5,8 @@ var URL_PRE = process.argv[2];
 
 let URL = URL_PRE.split(",");
 
-
-dividirCadena(URL, coma);
+console.log(URL_PRE);
+console.log(URL[0]);
 
 const optionsAA = {
         standard: 'WCAG2AA',
