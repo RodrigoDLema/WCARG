@@ -1,15 +1,18 @@
 const pally = require('pa11y')
 const functionEsAccesible = require("./functions.js")
 
-var URL_PRE = process.argv[2];
+var URL = process.argv[2];
+var coma = ",";
 
-let URL = URL_PRE.split(",");
+function dividirCadena(cadenaADividir,separador) {
+   var arrayDeCadenas = cadenaADividir.split(separador);
+   for (var i=0; i < arrayDeCadenas.length; i++) {
+      console.log(arrayDeCadenas[i]);
+   }
+}
 
-console.log(URL_PRE)
 
-console.log(URL)
-
-console.log(URL[0])
+dividirCadena(URL, coma);
 
 const optionsAA = {
         standard: 'WCAG2AA',
