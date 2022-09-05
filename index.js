@@ -3,9 +3,9 @@ const functionEsAccesible = require("./functions.js")
 
 var URL_PRE = process.argv[2];
 
-let text = "https://www.eventbrite.com/,https://www.ole.com.ar/";
+let text = "www.eventbrite.com/ ,www.ole.com.ar/";
 const myArray = text.split(",");
-let URL = myArray[1];
+let URL = myArray[0];
 
 
 const optionsAA = {
