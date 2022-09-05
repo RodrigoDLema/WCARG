@@ -1,15 +1,9 @@
 const pally = require('pa11y')
 const functionEsAccesible = require("./functions.js")
 
-var URL = process.argv[2];
-var coma = ",";
+var URL_PRE = process.argv[2];
 
-function dividirCadena(cadenaADividir,separador) {
-   var arrayDeCadenas = cadenaADividir.split(separador);
-   for (var i=0; i < arrayDeCadenas.length; i++) {
-      console.log(arrayDeCadenas[i]);
-   }
-}
+let URL = URL_PRE.split(",");
 
 
 dividirCadena(URL, coma);
